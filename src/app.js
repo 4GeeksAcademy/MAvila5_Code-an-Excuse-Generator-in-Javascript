@@ -2,17 +2,16 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
 window.onload = function() {
   //write your code here
-  const GenerateExcuse = document.getElementById("GenerateExcuse");
+  const newExcuse = document.getElementById("newExcuse");
+  // Added a generate button
   const generateButton = document.getElementById("generateButton");
 
   generateExcuse();
 
-  GenerateExcuse.addEventListener("click", generateExcuse);
+  // Fixed IDs to be camelCase
+  newExcuse.addEventListener("click", generateExcuse);
 
   function generateExcuse() {
     let who = ["The dog", "My grandma", "His turtle", "My bird"];
