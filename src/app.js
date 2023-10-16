@@ -8,10 +8,11 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   const GenerateExcuse = document.getElementById("GenerateExcuse");
+  const generateButton = document.getElementById("generateButton");
 
   generateExcuse();
 
-  GenerateExcuse.addEventListener("click", GenerateExcuse);
+  GenerateExcuse.addEventListener("click", generateExcuse);
 
   function generateExcuse() {
     let who = ["The dog", "My grandma", "His turtle", "My bird"];
